@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 // const hostname = '192.168.29.49';
-const port = process.env.PORT || 5000;
+// const port = process.env.PORT || 5000;
 const app = express();
 
 const server = require("http").createServer(app);
@@ -19,6 +19,4 @@ io.on("connection", function(socket) {
         socket.broadcast.emit("chat", message);
     });
 });
-server.listen(port, () => {
-    console.log(`server running at ${port}/`)
-});
+server.listen(5000);
