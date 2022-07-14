@@ -1,9 +1,8 @@
-const { prototype } = require("events");
 const express = require("express");
 const path = require("path");
 
 // const hostname = '192.168.29.49';
-const port = 8080;
+var PORT = process.env.PORT || 5000;
 const app = express();
 
 const server = require("http").createServer(app);
@@ -20,6 +19,6 @@ io.on("connection", function(socket) {
         socket.broadcast.emit("chat", message);
     });
 });
-server.listen(port, () => {
+server.listen(PORT, () => {
     console.log(`app listening at http://localhost"${port}`)
 });
