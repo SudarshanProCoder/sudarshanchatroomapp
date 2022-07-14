@@ -20,6 +20,6 @@ io.on("connection", function(socket) {
         socket.broadcast.emit("chat", message);
     });
 });
-server.listen(process.env.PORT || prototype, () => {
+server.listen(process.env.PORT || port, () => {
     console.log(`app listening at http://localhost"${port}`)
 });
