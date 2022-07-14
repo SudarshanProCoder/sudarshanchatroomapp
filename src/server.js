@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 // const hostname = '192.168.29.49';
-let port = process.env.PORT || 8080;
+var port = process.env.PORT || 8080;
 const app = express();
 
 const server = require("http").createServer(app);
