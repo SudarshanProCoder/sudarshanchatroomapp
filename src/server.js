@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 // const hostname = '192.168.29.49';
-var port = process.env.PORT || 8080;
+// var port = process.env.PORT || 8080;
 const app = express();
 
 const server = require("http").createServer(app);
@@ -19,6 +19,4 @@ io.on("connection", function(socket) {
         socket.broadcast.emit("chat", message);
     });
 });
-server.listen(port, () => {
-    console.log(`App is running at the port ${port}`);
-});
+server.listen(8080);
