@@ -89,3 +89,7 @@
     }
 
 })();
+
+VanillaTilt.init(document.querySelector(".tilt"), {
+    max: 25
+});
