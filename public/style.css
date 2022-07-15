@@ -130,11 +130,11 @@ body {
 .chat-screen .messages .message {
     display: flex;
     padding: 10px;
-    border-radius: 10px;
 }
 
 .chat-screen .messages .message>div {
     max-width: 80%;
+    border-radius: 15px;
     background: rgb(232, 192, 192);
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.65);
     padding: 10px;
