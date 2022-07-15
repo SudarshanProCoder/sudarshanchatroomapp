@@ -23,7 +23,7 @@ body #particles-js {
     justify-content: center;
 }
 
-body::after {
+body::before {
     content: '';
     position: absolute;
     top: 0;
