@@ -123,8 +123,14 @@ body {
     width: 100%;
     height: calc(100% - 100px);
     /* background: #f5f5f5; */
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("./asset/vid.mp4") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), no-repeat center;
     overflow: auto;
+}
+
+.chat-screen .messages #vid {
+    position: fixed;
+    background-repeat: no-repeat;
+    background: center;
 }
 
 .chat-screen .messages .message {
