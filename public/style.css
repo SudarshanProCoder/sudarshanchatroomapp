@@ -8,9 +8,19 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .2)), url("./asset/wp4410743.webp"), no-repeat center;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .2)), url("./asset/wp4410743.webp"), no-repeat center; */
     display: flex;
     justify-content: center;
+}
+
+body #particles-js {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .app {
@@ -19,8 +29,8 @@ body {
     height: 100%;
     max-width: 600px;
     background: #eee;
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
+    border-left: 1px solid #b61924;
+    border-right: 1px solid #b61924;
 }
 
 .app>.screen {

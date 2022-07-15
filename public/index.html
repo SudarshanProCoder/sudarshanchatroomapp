@@ -9,42 +9,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./asset/icon.webp" type="image/x-icon">
+
 </head>
 
 <body>
-    <div class="app">
-        <div class="screen join-screen active ">
+    <div id="particles-js">
 
-            <img src="./asset/IMG_20220630_163249_469.jpg" alt="">
+        <div class="app">
+            <div class="screen join-screen active ">
 
-            <div class="form">
-                <h2>sudarshan chat room</h2>
-                <div class="form-input">
-                    <label for="">username</label>
-                    <input type="text" id="username">
+                <img src="./asset/IMG_20220630_163249_469.jpg" alt="">
+
+                <div class="form">
+                    <h2>sudarshan chat room</h2>
+                    <div class="form-input">
+                        <label for="">username</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="form-input">
+                        <button id="join-user">join</button>
+                    </div>
                 </div>
-                <div class="form-input">
-                    <button id="join-user">join</button>
+            </div>
+            <div class="screen chat-screen  ">
+                <div class="header">
+                    <div class="logo">chatroom</div>
+                    <button id="exit-chat">exit</button>
                 </div>
-            </div>
-        </div>
-        <div class="screen chat-screen  ">
-            <div class="header">
-                <div class="logo">chatroom</div>
-                <button id="exit-chat">exit</button>
-            </div>
-            <div class="messages">
+                <div class="messages">
 
-            </div>
+                </div>
 
-            <div class="typebox">
-                <input type="text" id="message-input">
-                <button id="send-message">send</button>
+                <div class="typebox">
+                    <input type="text" id="message-input">
+                    <button id="send-message">send</button>
+                </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="socket.io/socket.io.js"></script>
     <script type="text/javascript" src="code.js"></script>
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
