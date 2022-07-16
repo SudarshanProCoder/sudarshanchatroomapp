@@ -53,10 +53,9 @@ body::before {
 }
 
 .app>.screen.active img {
-    /* position: fixed; */
     margin: 40px 220px;
     height: 150px;
-    border: 3px solid rgb(8, 19, 8);
+    border: 5px solid rgb(8, 19, 8);
     border-radius: 100px;
 }
 
@@ -137,21 +136,23 @@ body::before {
 
 .chat-screen .messages {
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - 110px);
     /* background: #f5f5f5; */
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("./asset/img.jpg") no-repeat center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./asset/img.jpg") no-repeat center;
     overflow: auto;
 }
 
 .chat-screen .messages .message {
+    font-size: 20px;
+    color: #eee;
     display: flex;
     padding: 10px;
 }
 
 .chat-screen .messages .message>div {
     max-width: 80%;
-    border-radius: 13px;
-    background: rgb(75, 117, 255);
+    border-radius: 20px;
+    background: linear-gradient(to left, rgba(7, 61, 237, 0.845), rgba(237, 7, 183, 0.726));
     box-shadow: 0px 0px 15px 3px rgba(216, 163, 190, 0.65);
     padding: 10px;
 }
@@ -166,7 +167,7 @@ body::before {
 
 .chat-screen .messages .message .name {
     font-size: 13px;
-    color: #555;
+    color: #03fcf4;
     margin-bottom: 5px;
 }
 
